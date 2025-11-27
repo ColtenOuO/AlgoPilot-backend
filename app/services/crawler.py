@@ -42,6 +42,9 @@ query problemsetQuestionList($categorySlug: String, $limit: Int, $skip: Int, $fi
 
 class LeetCodeCrawler:
     async def get_problem_detail(self, title_slug: str) -> Dict[str, Any]:
+        
+        title_slug = title_slug.replace(" ", "-") # remove space char
+        
         payload = {
             "query": QUESTION_QUERY,
             "variables": {"titleSlug": title_slug}
