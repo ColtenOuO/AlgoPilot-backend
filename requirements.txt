@@ -1,0 +1,12 @@
+fastapi
+uvicorn
+sqlalchemy
+alembic
+asyncpg
+psycopg2-binary
+celery[rabbitmq]
+pydantic-settings
+pgvector
+ollama
+httpx
+beautifulsoup4
